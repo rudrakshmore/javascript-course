@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>  
+   <title>Arrays and Loops exercises</title>
+    <style>
+     
+    </style>
+  </head>
+  <body>
+  
+  <script> 
+
+
+const nums=[10, 20, 30]
+console.log(nums)
+nums.splice(2)
+nums.push(99)
+console.log(nums)
+        nums[2]=100  
+console.log(nums)
+
+
+lastValue=[1, 20, 22, 24, 5]
+longthrow=['bad','good']
+getLastValue(longthrow)
+
+function getLastValue(array){
+
+let i = array.length-1;
+
+  const lastIndex=array[i]
+console.log(lastIndex)
+
+
+}
+
+array=[1, 2, 3]
+arraySwap(array)
+function arraySwap(array){
+
+  const l=array.length
+  const lastValue=l-1
+  array.push(array[0])
+  array[0]=array[l-1]
+  array.splice(array[l-2])
+  console.log(array)
+}
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html> 
