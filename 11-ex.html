@@ -96,7 +96,7 @@ resultantArray.push(array1[i]+array2[i])
 
 console.log(addArrays(evenArray,oddArray))
 
-const newArray=[1, -4, -8, -5 , -7, 9]
+const newArray=[1, 4, 8, 5 , 7, 9]
 
 function countPositive(nums)
 { let result = 0;
@@ -113,20 +113,43 @@ return result;
 }
 console.log(countPositive(newArray))
 
-
-function minMax(nums){let max = '';
-for (let i=0;i<nums.length;i++){
-if(nums[i]<nums[i]){max=nums[i]}
-
-  }
-  return max;
+const newArray2=[2]
+function minMax(nums)
+{
+  
+  
+  const result = 
+  {min:null,
+  max:null}
+  
+  
+  for (let i=0;i<nums.length;i++){
+    const value = nums[i]
+if(result.max === null||value>result.max){result.max=value}
+if(result.min === null || value<result.min){result.min=value}
 }
 
-console.log(minMaxarray
+ return result;
+
+  }
+ 
 
 
+console.log(minMax(newArray2))
 
+function countWords(words){
+const result = {}
 
+ for (let i=0;i<words.length;i++){const word = words[i]
+
+  if (!result[word]){result[word] = 1;}
+  else{result[word]++;}
+
+ }
+return result;
+}
+
+   console.log(countWords([  'apple', 'apple']))
 
 
 
