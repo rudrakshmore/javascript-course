@@ -150,17 +150,61 @@ return result;
 }
 
    console.log(countWords([  'apple', 'apple']))
-*/
 
 
-const words=['hello','world','search','good']
+
+const words=['hello','search','world','good','search']
+let index=-1
+
 for(let i=0;i<words.length;i++){
 
 const word= words[i]
-if(word ==='search'){break;}
+
+if(word ==='search'){ 
+  index=i;break;}
  
 }
- console.log(words.length)
+
+console.log(index)*/
+
+
+
+
+function findIndex(array,givenword){
+
+let index=-1
+
+for(let i=0;i<array.length;i++){
+
+const word= array[i]
+
+if(word ===givenword){ 
+  index=i;break;}
+ 
+}
+console.log(index)
+}
+
+const strings =['red','blue','green','white']
+findIndex(strings,'black')
+
+const groceries = ['egg','egg','egg','brocoli','egg','meat']
+
+function removeEggs (foods){
+const result=[]
+let eggQuantity='';
+for(let i = 0;i<foods.length;i++){
+let index = 0
+const food = foods[i]
+if(food==='egg'&& eggQuantity<2){eggQuantity++;continue;}
+ else{result.push(food)}
+ 
+}
+console.log(result)
+
+}
+removeEggs (groceries)
+
 
 
 </script>
