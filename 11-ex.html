@@ -191,21 +191,23 @@ findIndex(strings,'black')
 const groceries = ['egg','egg','egg','brocoli','egg','meat']
 
 function removeEggs (foods){
-const reversefoods = foods.reverse()
+
+const reversefoods = foods.slice().reverse()
+
   const result=[]
 let eggQuantity='';
 for(let i = 0;i<reversefoods.length;i++){
-let index = 0
-const food = foods[i]
+
+const food = reversefoods[i]
 if(food==='egg'&& eggQuantity<2){eggQuantity++;continue;}
- else{result.push(food)}
+ result.push(food)
  
 }
-const reverseResult = result.reverse()
-console.log(reverseResult)
+return result.reverse()
+;
 
 }
-removeEggs (groceries)
+console.log(groceries)
 
 
 
