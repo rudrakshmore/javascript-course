@@ -165,7 +165,7 @@ if(word ==='search'){
  
 }
 
-console.log(index)*/
+console.log(index)
 
 
 
@@ -209,7 +209,57 @@ return result.reverse()
 }
 console.log(groceries)
 
+fizzbuzz
 
+for(let i = 1;i<=20;i++){
+let num= i
+if(num%3===0 && num%5===0){num='FizzBuzz';}
+if(num%3===0){num='Fizz';}
+if(num%5===0){num='Buzz';}
+
+
+
+
+
+console.log(num)
+ 
+}
+
+*/
+
+
+function findIndex(array,givenword){
+
+let index=-1
+
+for(let i=0;i<array.length;i++){
+
+const word= array[i]
+
+if(word ===givenword){ 
+  index=i;break;}
+ 
+}
+return index;
+}
+
+const strings =['red','blue','green','white','white','yellow']
+findIndex(strings,'white')
+
+
+function unique (array){
+const result =[]
+
+for(let i=0;i<array.length;i++){
+givenword=array[i]
+
+if(findIndex(result,givenword)===-1)
+{result.push(givenword)}
+}
+return result;
+
+}
+console.log(unique (strings))
 
 </script>
 </body>
