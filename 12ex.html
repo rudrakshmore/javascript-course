@@ -44,19 +44,24 @@ if(isDisplayingNotification){return;}
 isDisplayingNotification=true;
 
 
-}
+
 
 
 
 
 
 intervalId1 = setInterval(function(){
-if(document.title==='app'){document.title=`(${messages})New messages`}
-else{document.title='app'}
+if(document.title==='App'){document.title=`(${messages})New messages`}
+else{document.title='App'}
 
-},1000)
+},1000);}
 
-function stopNotification(){clearInterval(intervalId1)}
+function stopNotification(){
+  isDisplayingNotification=false;
+  
+  clearInterval(intervalId1);
+document.title='App'
+}
 
 
 let timeoutId;
