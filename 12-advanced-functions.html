@@ -7,7 +7,7 @@
     </style>
   </head>
   <body>
-  
+<button>click</button>  
 
 
     <script> 
@@ -48,17 +48,17 @@ console.log('timeout2')}
 console.log('nextline')
 setInterval(function(){console.log('interval')}
 ,3000)
-console.log('nextline2')*/
+console.log('nextline2')
 
 [
   'make dinner','wash dishes', 'watch-yt'
-].forEach(function(value, index){if(value==='wash dishes'){return}
+].forEach((value, index)=>{if(value==='wash dishes'){return}
 console.log(value)
 console.log(index)
 });
 
 
-const regularFunction=(){}
+
 
 
 
@@ -67,6 +67,19 @@ const regularFunction=(){}
 
 const arrowFunction = () => {console.log('hello')}
 arrowFunction();
+
+const oneParam = (param) => {console.log(param+1)}
+oneParam(2)
+const oneLine = () =>  2+3;
+console.log(oneLine());
+
+
+const object2= {method:()=>{
+
+
+},method(){}}
+*/
+
 
 
 
